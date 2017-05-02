@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,10 +13,10 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/ulefone/k11ta_a/k11ta_a-vendor.mk
+VENDOR_BLOBS ?= vendor/vernee/k11tc_a/k11tc_a-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-MTK_PROJECT_CONFIG ?= device/ulefone/k11ta_a/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/vernee/k11tc_a/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
 # Charger and USB

@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,10 +16,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from k11ta_a
-$(call inherit-product, device/ulefone/k11ta_a/device.mk)
+$(call inherit-product, device/vernee/k11tc_a/device.mk)
 
-PRODUCT_DEVICE := k11ta_a
-PRODUCT_NAME := full_k11ta_a
-PRODUCT_BRAND := ulefone
-PRODUCT_MODEL := k11ta_a
-PRODUCT_MANUFACTURER := ulefone
+PRODUCT_DEVICE := k11tc_a
+PRODUCT_NAME := full_k11tc_a
+PRODUCT_BRAND := vernee
+PRODUCT_MODEL := k11tc_a
+PRODUCT_MANUFACTURER := vernee

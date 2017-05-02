@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 
 TARGET_BOARD_PLATFORM := mt6755
 
-DEVICE_PATH := device/ulefone/k11ta_a
+DEVICE_PATH := device/vernee/k11tc_a
 
 MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
@@ -33,16 +33,16 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 enforcing=0 androidboot.selinux=permissive
-BOARD_MKBOOTIMG_ARGS := --board K11TA-A.A.vR14. --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
+BOARD_MKBOOTIMG_ARGS := --board K11TC-A.A.vA08. --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
 
 # Kernel properties
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
-TARGET_KERNEL_SOURCE := kernel/ulefone/k11ta_a
-TARGET_KERNEL_CONFIG := lineageos_k11ta_a_defconfig
+TARGET_KERNEL_SOURCE := kernel/vernee/k11tc_a
+TARGET_KERNEL_CONFIG := lineageos_k11tc_a_defconfig
 
-TARGET_BOOTLOADER_BOARD_NAME := k11ta_a
+TARGET_BOOTLOADER_BOARD_NAME := k11tc_a
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
