@@ -100,5 +100,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.mediatek.version.release=$(MTK_BUILD_VERNO) \
     ro.mediatek.chip_ver=$(MTK_CHIP_VER)
 
+# Recovery allowed devices
+TARGET_OTA_ASSERT_DEVICE := mars,k11ntc_a
+
 # Inherit the rest from mt6755-common
 $(call inherit-product, device/cyanogen/mt6755-common/mt6755.mk)
